@@ -1,0 +1,134 @@
+/* Header */
+#hero {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#hero > img {
+  width: 100%;
+  height: auto;
+  filter: brightness(50%);
+}
+
+.quote {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Wildlife Observations Map */
+#map-container {
+  height: 450px;
+  width: 100%;
+}
+
+.marker-text {
+  text-align: center;
+}
+
+/* Wildlife Observations Table */
+.buttons {
+  text-align: center;
+  margin: 2em;
+}
+.buttons > button:hover {
+  background-color: lightblue;
+}
+
+td {
+  vertical-align: middle;
+}
+
+time {
+  background: inherit;
+}
+
+/* Cards */
+#observation-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#legend {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  height: 515px;
+  padding: 0;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.card-img {
+  width: 375px;
+  height: 375px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-body {
+  padding: 0 15px;
+  font-family: Arial, sans-serif;
+}
+
+.card-body a,
+.card-body a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+.card-body h3 {
+  font-size: 1.4em;
+}
+
+.card-body h4 {
+  font-size: 1em;
+  margin: 3px;
+}
+
+.card-icons {
+  padding: 0 15px;
+  padding-top: 0;
+  text-align: right;
+}
+
+.card-icons > i {
+  margin: 5px;
+  font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+  text-align: right;
+}
+
+/* @TODO: style the Search Form */
+.search {
+  margin-bottom: 10px;
+}
+
+#search_query {
+  width: 75%;
+  display: inline-block;
+}
+
+#search_submit {
+  width: 20%;
+  display: inline-block;
+}

@@ -1,0 +1,17 @@
+/* * Styles for the add-observation.html page */
+
+.req_star {
+  color: red;
+}
+
+#ob_desc {
+  width: 510px;
+}
+
+#photo_name {
+  width: 510px;
+}
+
+#photo_email {
+  width: 510px;
+}
