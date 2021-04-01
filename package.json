@@ -9,7 +9,8 @@
     "prepare-submission": "run-s -n -c prettier mkdir copy-src zip",
     "prezip": "rimraf submission.zip",
     "zip": "bestzip submission.zip submission/*",
-    "start": "live-server src"
+    "start": "live-server src",
+    "vercel-deploy": "next build && next export"
   },
   "license": "BSD-2-Clause",
   "devDependencies": {
