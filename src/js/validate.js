@@ -10,8 +10,8 @@ function validate(event) {
 
   const _check = document.querySelector('form');
 
-  const _latitude  = parseFloat(_check.lo_latitude.value);
-  const _longitude = parseFloat(_check.lo_longitude.value);
+  const _latitude  = _check.lo_latitude.value;
+  const _longitude = _check.lo_longitude.value;
   const _labelLat  = _check.querySelector('#latitude_label > span');
   const _labelLong = _check.querySelector('#longitude_label > span');
   let _result      = true;
