@@ -8,8 +8,7 @@ function validate(event) {
   // and stop the form from being submitted.
   // If both values are valid, allow the form to be submitted.
 
-  const _check = document.querySelector('form');
-
+  const _check     = document.querySelector('form');
   const _latitude  = _check.lo_latitude.value;
   const _longitude = _check.lo_longitude.value;
   const _labelLat  = _check.querySelector('#latitude_label > span');
