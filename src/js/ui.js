@@ -110,7 +110,7 @@ function toggleLoading(isLoading) {
   butt = document.querySelector('#search_submit');
   if (isLoading) {
     butt.setAttribute("disabled", "disabled");
-    butt.innerHTML = "<i class='fas fa-search'> Loading…</i>";
+    butt.innerHTML = "<i class='fas fa-hourglass-half'> Loading…</i>";
   }
   else {
     butt.removeAttribute("disabled");
