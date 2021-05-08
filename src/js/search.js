@@ -116,7 +116,7 @@ function search(query) {
     }
 
     const { lat, lng } = coords;
-
+    // TODO:
     // If we have coords, use them to do the second step. Load observation data
     // for this geographic position, and format it so we can use it to update the UI.
     // Again, we pass a callback function as the final argument, which will be
