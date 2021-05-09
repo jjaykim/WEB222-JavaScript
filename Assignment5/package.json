@@ -1,0 +1,24 @@
+{
+  "name": "wildlife-web-walk",
+  "version": "1.0.0",
+  "scripts": {
+    "copy-src": "copyfiles package.json src/**/* src/* submission",
+    "mkdir": "mkdirp submission",
+    "prettier": "prettier --write \"src/**/*.{html,js,css}\"",
+    "preprepare-submission": "rimraf submission",
+    "prepare-submission": "run-s -n -c prettier mkdir copy-src zip",
+    "prezip": "rimraf submission.zip",
+    "zip": "bestzip submission.zip submission/*",
+    "start": "live-server src"
+  },
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "bestzip": "^2.1.7",
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.1",
+    "mkdirp": "^1.0.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
