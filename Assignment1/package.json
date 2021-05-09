@@ -1,0 +1,40 @@
+{
+  "name": "web222-assignment-1",
+  "version": "3.0.0",
+  "description": "WEB222 JavaScript Assignment 1",
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "submission"
+    ]
+  },
+  "scripts": {
+    "copy-src": "copyfiles package.json src/**/* submission",
+    "mkdir": "mkdirp submission",
+    "eslint-to-file": "npm run eslint > submission/eslint.log 2>&1",
+    "eslint": "eslint src/**/*.js",
+    "prettier": "prettier --write \"src/**/*.{html,js,css}\"",
+    "test-to-file": "npm run test > submission/test.log 2>&1",
+    "test": "jest --",
+    "test-watch": "jest --watch --",
+    "preprepare-submission": "rimraf submission",
+    "prepare-submission": "run-s -n -c prettier mkdir copy-src eslint-to-file test-to-file zip",
+    "prezip": "rimraf submission.zip",
+    "zip": "bestzip submission.zip submission/",
+    "clean": "rimraf submission submission.zip"
+  },
+  "devDependencies": {
+    "bestzip": "^2.1.7",
+    "copyfiles": "^2.4.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.6.3",
+    "mkdirp": "^1.0.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
